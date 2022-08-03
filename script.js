@@ -90,12 +90,3 @@ btnMode.addEventListener('click', () => {
     btnMode.innerHTML = 'darkMode()';
   }
 });
-
-// DEBERÍA AGREGAR UN FOOTER QUIZA EN NARANJA (QUIZA NO PORQUE
-// ROMPERIA EL MINIMALISMO)
-// QUE VAYA CONTANDO LOS CLICKS QUE SE DAN EN MIS LINKS Y QUEDE GUARDADA EN UNA
-// BASE DE DATOS PARA DAR UNA MUESTRA DE MANEJO DE BASE DE DATOS SENCILLA
-
-// imagino que puedo hacer un ciclo forEach y recorrer todos los if identificandolos
-// con template literal para el que el id sea dinámico y no tener todo
-// este choclo de código

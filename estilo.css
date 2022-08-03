@@ -276,12 +276,6 @@ a:visited {
   cursor: pointer;
 }
 
-/* .footer .btn-mode {
-  text-align: end;
-  justify-content: flex-end;
-  background-color: var(--darkBlue);
-} */
-
 /* Responsive */
 
 @media (max-width: 850px) {
