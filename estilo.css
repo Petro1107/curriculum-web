@@ -1,0 +1,309 @@
+:root {
+  --white: hsl(0, 0%, 100%);
+  --lightGrey: hsl(217, 12%, 63%);
+  --mediumGrey: hsl(216, 12%, 54%);
+  --darkBlue: hsl(213, 19%, 18%);
+  --veryDarkBlue: rgb(23, 30, 40);
+  --orange: hsl(25, 97%, 53%);
+  --black: rgb(20, 21, 25);
+  font-family: 'Overpass', sans-serif;
+  font-family: 'Roboto Mono', monospace;
+  background-color: var(--darkBlue);
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  color: var(--orange);
+  user-select: none;
+}
+
+.profile-img {
+  height: 200px;
+  width: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-top: 5vh;
+  margin-bottom: 20px;
+  display: none;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+}
+
+/*  --CONTACT SECTION-- 
+------------------------------------------------
+--------------------------------------------------*/
+
+.contact {
+  background-color: var(--veryDarkBlue);
+  height: 100vh;
+  width: 40vh;
+  min-width: 297px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact.light {
+  background-color: var(--orange);
+  color: var(--white);
+}
+
+.contact h2 {
+  margin: 90px 10px 50px 10px;
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.contact h2.light {
+  color: var(--white);
+}
+
+.contact-title {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.contact-title.light {
+  color: var(--white);
+}
+
+.contact-icon.light {
+  color: var(--white);
+}
+
+.contact-info,
+.profile-links {
+  font-size: 1rem;
+  margin: 20px 0px;
+  list-style-type: none;
+  width: 100%;
+}
+
+.contact-info-email:hover,
+.contact-info-cellphone:hover {
+  background-color: var(--darkBlue);
+}
+
+.contact-info-email.light,
+.contact-info-cellphone.light,
+.contact-info-address.light,
+.contact-info-brithday.light {
+  color: var(--white);
+}
+
+.contact-info-email.light:hover,
+.contact-info-cellphone.light:hover {
+  background-color: var(--white);
+  color: var(--orange);
+}
+
+.contact-info-email.light:hover > .fa-envelope,
+.contact-info-cellphone.light:hover > .fa-square-phone {
+  background-color: var(--white);
+  color: var(--orange);
+}
+
+li {
+  padding: 10px;
+}
+
+.profile-links li:hover {
+  background-color: var(--darkBlue);
+}
+
+.profile-links li.light:hover {
+  background-color: var(--white);
+  color: var(--orange);
+}
+
+.profile-links li.light:hover > .fa-brands {
+  color: var(--orange);
+}
+
+.profile-links li.light {
+  color: var(--white);
+}
+
+a {
+  text-decoration: none;
+  color: var(--orange);
+}
+
+a:visited {
+  color: var(--orange);
+}
+
+/* --INFO SECTION-- --------------------------------------
+---------------------------------------------------------*/
+
+.info {
+  background-color: var(--darkBlue);
+  height: 100vh;
+  width: 100%;
+  font-size: 2.7rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
+  overflow-y: auto;
+}
+
+.info.light {
+  background-color: var(--white);
+}
+
+.info::-webkit-scrollbar {
+  width: 5px;
+}
+
+.info::-webkit-scrollbar-thumb {
+  background-color: var(--orange);
+}
+
+.info-section {
+  text-align: right;
+}
+
+.info-section:hover {
+  background-color: var(--veryDarkBlue);
+}
+
+.info-section.light:hover {
+  background-color: var(--orange);
+  color: var(--white);
+}
+
+#languages-content,
+#education-content,
+#job-experience-content,
+#career-goals-content,
+#references-content {
+  display: none;
+  font-size: 1rem;
+  max-width: 1200px;
+  float: right;
+}
+
+.info-section-title {
+  display: block;
+  padding: 12px;
+}
+
+.info-section-title.light:hover {
+  color: var(--white);
+}
+
+.info-section-title.light:hover > .info-icon.light {
+  color: var(--white);
+}
+
+.info-icon.light:hover {
+  color: var(--white);
+}
+
+.active {
+  display: block;
+}
+
+.img-languages {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 150px;
+  max-width: 900px;
+  margin-right: 0px;
+  margin-left: auto;
+  direction: rtl;
+}
+
+.logo {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* JOB EXPERIENCE STYLES */
+
+.job-item,
+.education-item {
+  margin: 15px 15px 30px;
+}
+
+.job-title,
+.education-title {
+  margin-bottom: 5px;
+}
+
+.job-enterprise,
+.education-institution {
+  margin-bottom: 15px;
+}
+
+.job-date,
+.education-date {
+  margin-bottom: 5px;
+}
+
+.education-description {
+  margin-bottom: 5px;
+}
+
+.career-text {
+  margin: 20px 15px;
+}
+
+.references-item {
+  margin: 20px 15px;
+}
+
+.footer {
+  position: sticky;
+  margin-top: auto;
+  margin-left: auto;
+  margin-bottom: 3px;
+  font-size: 1rem;
+}
+
+.footer .btn-mode:hover {
+  cursor: pointer;
+}
+
+/* .footer .btn-mode {
+  text-align: end;
+  justify-content: flex-end;
+  background-color: var(--darkBlue);
+} */
+
+/* Responsive */
+
+@media (max-width: 850px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .contact {
+    width: 100%;
+  }
+
+  .contact h2 {
+    font-size: 3rem;
+  }
+
+  .info {
+    overflow: visible;
+    font-size: 2rem;
+    height: 100%;
+  }
+
+  .info-section:hover {
+    background-color: var(--darkBlue);
+  }
+}
